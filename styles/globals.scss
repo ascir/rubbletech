@@ -20,9 +20,20 @@ $carbon--theme: $carbon--theme--g100;
 @include carbon--theme();
 
 @import '../node_modules/carbon-components/scss/components/ui-shell/ui-shell';
-@import '../node_modules/carbon-components/scss/components/button/button';
 @import '../node_modules/carbon-components/scss/components/content-switcher/content-switcher';
 @import '../node_modules/carbon-components/scss/components/tile/tile';
+@import '../node_modules/carbon-components/scss/components/form/form';
+@import '../node_modules/carbon-components/scss/components/text-area/text-area';
+@import '../node_modules/carbon-components/scss/components/text-input/text-input';
+@import '../node_modules/carbon-components/scss/components/number-input/number-input';
+@import '../node_modules/carbon-components/scss/components/button/button';
+@import '../node_modules/carbon-components/scss/components/select/select';
+@import '../node_modules/carbon-components/scss/components/loading/loading';
+@import '../node_modules/carbon-components/scss/components/inline-loading/inline-loading';
+@import '../node_modules/carbon-components/scss/components/accordion/accordion';
+
+
+
 @import '~@carbon/grid/scss/grid';
 $css--reset: true;
 .bx--content-switcher-btn {
@@ -38,6 +49,16 @@ $css--reset: true;
   //margin-right: 2rem;
   //margin-left: 2rem;
 }
+.bx--label {
+  font-size: 20px;
+}
+.bx--inline-loading {
+  display: inline-block;
+  width: 20%;
+}
+.bx--accordion__title {
+  font-size: 1.370rem;
+}
 td {
   padding: 10px;
   border: 1px solid white;
@@ -45,4 +66,16 @@ td {
 th {
   padding: 10px;
   border: 1px solid white;
+}
+ol, ul {
+  list-style: auto;
+}
+b {
+  font-weight: bold;
+}
+//p {
+//  font-size: 40px;
+//}
+.bx--accordion__content > p{
+  font-size: 16px;
 }
